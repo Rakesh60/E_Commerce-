@@ -1,0 +1,663 @@
+<div class='container-fluid' id='top-cards'>
+    <div class='row container-fluid'>
+        <div class='col-xl-2 col-lg-3 col-md-6 col-sm-1 py-3 py-md-0'>
+            <div class='card' style='background-color: antiquewhite;'>
+                <img src='./ancient-gd05e0fde5_1280.jpg' class='rounded' alt='>
+                <div class=' card-img-overlay'>
+                <h5 class='card-title text-light'>Earthen Pots</h5>
+                <p class='text-light'>Lorem ipsum dolor sit amet.</p>
+                <button class='btn  btn-outline-light'>Order Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- banner -->
+<div class='banner'>
+    <div class='content'>
+        <h1 class='text-white' id='offer'>Get Up To 50% Off</h1>
+        <p class='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dignissimos?</p>
+        <div id='bannerbtn'>
+            <button class='btn btn-outline-light'>Shop Now</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<?php 
+                
+$select_query='SELECT * FROM `products`';
+$result_query=mysqli_query($conn,$select_query);
+// $row=mysqli_fetch_assoc($result_query);
+// echo $row['product_title'];
+while($row=mysqli_fetch_assoc($result_query)){
+    $product_id=$row['product_id'];
+    $product_title=$row['product_title'];
+    $description=$row['product_description'];
+    $product_image1=$row['product_image1'];
+    $product_price=$row['product_price'];
+    $category_id=$row['category_id'];
+    $brand_id=$row['brand_id'];
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='col-lg-3 col-md-4 col-sm-12 mb-2'>
+    <div class='card' style='width: 18rem;'>
+        <img src='./ProductIMG.jpg&text=PRODUCT+IMAGE' class='card-img-top' alt='...'>
+        <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+            <p class='card-text'>Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            <a href='#' class='btn btn-primary'>Buy now</a>
+            <a href='#' class='btn btn-primary'>Add toCart <i class='></i> </a>
+            
+        </div>
+    </div>
+
+</div>
+
+
+admin_area\product_images\images (1).jpeg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+original card
+
+<div class='col-lg-3 col-md-4 col-sm-12 mb-2'>
+    <div class='card' style='width: 18rem;'>
+        <img src='./ProductIMG.jpg&text=PRODUCT+IMAGE' class='card-img-top' alt='...'>
+        <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+            <p class='card-text'>Some quick example text to build on the card title and make up the
+                bulk of the card' s content.</p>
+                    <a href='#' class='btn btn-primary'>Buy now</a>
+                    <a href='#' class='btn btn-primary'>Add toCart <i class='></i> </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='col-lg-3 col-md-4 col-sm-12 mb-2'>
+    <div class='card' style='width: 18rem;'>
+        <img src='./ProductIMG.jpg&text=PRODUCT+IMAGE' class='card-img-top' alt='...'>
+        <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+            <p class='card-text'>Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            <a href='#' class='btn btn-primary'>Buy now</a>
+            <a href='#' class='btn btn-primary'>Add toCart <i class='></i> </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class='col-lg-3 col-md-4 col-sm-12 mb-2'>
+    <div class='card' style='width: 18rem;'>
+        <img src='./ProductIMG.jpg&text=PRODUCT+IMAGE' class='card-img-top' alt='...'>
+        <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+            <p class='card-text'>Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            <a href='#' class='btn btn-primary'>Buy now</a>
+            <a href='#' class='btn btn-primary'>Add toCart <i class=''></i> </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+      <span aria-hidden='true'>&times;</span>
+    </button>
+  </div>
+
+
+
+
+  <div class='alert alert-primary' role='alert'>
+    This is a primary alert with <a href='#' class='alert-link'>an example link</a>. Give it a click if you like.
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class='col-lg-2 col-md-3 col-sm-12 bg-info p-0 m-0'>
+    <!-- SIDE NAV -->
+    <ul class='navbar-nav me-auto text-center'>
+        <li class='nav-item bg-warning'>
+            <a href=' class='nav-link text-danger'>
+                <h4>Category</h4>
+            </a>
+        </li>
+        <?php
+
+getcategory();
+?>
+
+        <li class='nav-item bg-warning'>
+            <a href=' class='nav-link text-danger'>
+                <h4>State</h4>
+            </a>
+        </li>
+
+        <?php
+getstate();
+?>
+
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class='navbar-nav me-auto text-center'>
+    <li class='nav-item bg-warning'>
+        <a href=' class='nav-link text-danger'>
+            <h4>Category</h4>
+        </a>
+    </li>
+    <?php
+
+getcategory();
+?>
+
+    <li class='nav-item bg-warning'>
+        <a href=' class='nav-link text-danger'>
+            <h4>State</h4>
+        </a>
+    </li>
+
+    <?php
+getstate();
+?>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='col-lg-1 col-md-3 col-sm-12 bg-info p-0 m-0'>
+    <button class='btn btn-sm btn-primary ' type='button' data-bs-toggle='offcanvas'
+        data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions'>Enable</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+Sure, here is a sample FAQ for an eCommerce website:
+
+How do I create an account?
+
+To create an account, simply click on the 'Create an Account' button on the top right corner of the website. You will be asked to provide some basic information, such as your name, email address, and password. Once you have created an account, you will be able to log in and start shopping.
+
+How do I find products?
+
+You can find products on our website by using the search bar, browsing through the different categories, or by clicking on the 'Featured Products' or 'New Arrivals' sections.
+
+How do I add products to my cart?
+
+To add a product to your cart, simply click on the 'Add to Cart' button next to the product. You can then continue shopping or proceed to checkout.
+
+How do I checkout?
+
+To checkout, simply click on the 'Checkout' button at the top right corner of the website. You will be asked to provide some additional information, such as your shipping address and payment information. Once you have submitted your payment information, your order will be placed.
+
+How do I track my order?
+
+Once you have placed an order, you will receive an email confirmation with your order number. You can track your order by clicking on the 'Track My Order' link in the email confirmation.
+
+How do I return a product?
+
+If you are not satisfied with a product, you can return it for a full refund. To return a product, simply contact our customer service team and they will be happy to help you.
+
+What are your shipping policies?
+
+We offer free shipping on orders over $50. For orders under $50, we charge a flat shipping rate of $5. We ship to all countries worldwide.
+
+What are your payment options?
+
+We accept Visa, Mastercard, American Express, and PayPal.
+
+How do I contact customer service?
+
+<div class='accordion-item'>
+                        <h2 class='accordion-header' id='flush-headingFour'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                                data-bs-target='#flush-collapseFour' aria-expanded='false'
+                                aria-controls='flush-collapseFour'>
+                                How do I create an account?
+                            </button>
+                        </h2>
+                        <div id='flush-collapseFour' class='accordion-collapse collapse'
+                            aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample'>
+                            <div class='accordion-body'>To create an account, simply click on the <button class='btn btn-sm
+                                        btn-primary'>Login <i class='fa-solid fa-user'></i></button> button on the top right corner of the website then go to signup. You will be asked to provide some basic information, such as your name, email address, and password. Once you have created an account, you will be able to log in and start shopping.
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    
+
+
+
+                    <footer>
+                        <!-- place footer here -->
+                        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'
+                            integrity='sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=' crossorigin='anonymous' />
+                        <footer class='bg-dark-gradient footer'>
+                            <div class='footer-top'>
+                                <div class='container'>
+                                    <div class='footer-border-bottom pb-6 mb-5'>
+                                        <div class='row'>
+                                            <div class='col-lg-4 col-xl-3'>
+                                                <h4 class='text-white'>
+                                                    Sign up to Get Latest Updates
+                                                </h4>
+                                            </div>
+                                            <div class='col-lg-4 col-xl-6'>
+                                                <form class='d-flex flex-row mb-2 p-1 bg-white input-group' >
+                                                    <input name='semail' type='email' class='form-control rounded-0 border-0'
+                                                        placeholder='you@yoursite.com'>
+                                                    <button class='btn btn-secondary rounded-0 flex-shrink-0'
+                                                       name='subscribe' type='submit'>Subscribe</button>
+                                                </form>
+                                               
+                                            </div>
+                                            <div class='col-lg-4 col-xl-3'>
+                                                <div class='text-lg-end text-white'>
+                                                    <span class='h6'>Call Us On</span><br>
+                                                    <span class='h3'>1-800-222-000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-sm-6 col-lg-3 my-4'>
+                                        <h5 class='text-white h6 mb-4'>Social Media</h5>
+                                            
+                                            <div class='text-white mb-4'>We are measuring the results of our social media campaigns to optimize our efforts.</div>
+                                            <div class='nav footer-socila-icon'>
+                                                <a href='#'>
+                                                    <i class='fab fa-facebook-f'></i>
+                                                </a>
+                                                <a href='#'>
+                                                    <i class='fab fa-twitter'></i>
+                                                </a>
+                                                <a href='#'>
+                                                    <i class='fab fa-instagram'></i>
+                                                </a>
+                                                <a href='#'>
+                                                    <i class='fab fa-linkedin-in'></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class='col-sm-6 col-lg-2 my-4'>
+                                            <h5 class='text-white h6 mb-4'>Customer</h5>
+                                            <ul class='list-unstyled white-link footer-links'>
+                                                <li>
+                                                    <a href='#'>Get Corpo</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Documentation</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Help center</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Pricing</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Contact us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='col-sm-6 col-lg-2 my-4'>
+                                            <h5 class='text-white h6 mb-4'>Join Us</h5>
+                                            <ul class='list-unstyled white-link footer-links'>
+                                                <li>
+                                                    <a href='#'>Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Join our team</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Elements</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Products</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='col-sm-6 col-lg-2 my-4'>
+                                            <h5 class='text-white h6 mb-4'>Our Policies</h5>
+                                            <ul class='list-unstyled white-link footer-links'>
+                                                <li>
+                                                    <a href='#'>About</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Careers</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Legal &amp; Security</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>Terms of use</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>We're hiring!</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class='col-sm-6 col-lg-3 my-4'>
+                                            <h5 class='text-white h6 mb-4'>Company by</h5>
+                                            <div class='white-link'>
+                                                <div class='d-flex pb-3'>
+                                                    <!-- <div class='avatar avatar-lg rounded'>
+                                                        <img class='rounded-circle'
+                                                            src='https://bootdey.com/img/Content/avatar/avatar1.png' title=' alt='>
+                                                    </div> -->
+                                                    <div class='col ps-3'>
+                
+                                                        <h6 class='font-w-500 h6 m-0'><a class='text-white' href='#'>Rajkumar
+                                                                Behera</a></h6>
+                                                    </div>
+                                                </div>
+                                                <div class='d-flex'>
+                                                    <!-- <div class='avatar avatar-lg rounded'>
+                                                        <img class='rounded-circle'
+                                                            src='https://bootdey.com/img/Content/avatar/avatar2.png' title=' alt='>
+                                                    </div> -->
+                                                    <div class='col ps-3'>
+                
+                                                        <h6 class='font-w-500 h6 m-0'><a class='text-white' href='#'>Rajeev Kumar</a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class='d-flex pb-3'>
+                                                    <!-- <div class='avatar avatar-lg rounded'>
+                                                        <img class='rounded-circle'
+                                                            src='https://bootdey.com/img/Content/avatar/avatar1.png' title=' alt='>
+                                                    </div> -->
+                                                  
+                                                </div>
+                                                <div class='d-flex pb-3'>
+                                                    <!-- <div class='avatar avatar-lg rounded'>
+                                                        <img class='rounded-circle'
+                                                            src='https://bootdey.com/img/Content/avatar/avatar1.png' title=' alt='>
+                                                    </div> -->
+                                                    <div class='col ps-3'>
+                                                        <h6 class='font-w-500 h6 m-0'><a class='text-white' href='#'>Sumit Singh</a></h6>
+                                                    </div>
+                                                </div>
+                
+                                                <div class='d-flex pb-3'>
+                                                    <!-- <div class='avatar avatar-lg rounded'>
+                                                        <img class='rounded-circle'
+                                                            src='https://bootdey.com/img/Content/avatar/avatar1.png' title=' alt='>
+                                                    </div> -->
+                                                    <div class='col ps-3'>
+                                                        <h6 class='font-w-500 h6 m-0'><a class='text-white' href='#'>Rakesh Kumar
+                                                                Gupta</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='footer-bottom footer-border-top light py-3'>
+                                <div class='container text-center text-white'>
+                                    <p class='m-0'> Copyright © 2023 All Right Reserved By <a href='#' class='text-reset'>Native_Art</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </footer>
+                    </footer>
+
+
+
+
+
+                    <main class='container'>
+
+                        <!-- Left Column / Headphones Image -->
+                        <div class='left-column'>
+                          <img data-image='black' src='../admin_area/product_images/bamboo-brush.jpg' alt='>
+                          <img data-image='blue' src='../admin_area/product_images/bamboo-hands.jpg' alt='>
+                          <img data-image='red' class='active' src='../admin_area/product_images/bamboo-toilet.jpg' alt='>
+                        </div>
+                    
+                    
+                        <!-- Right Column -->
+                        <div class='right-column'>
+                    
+                          <!-- Product Description -->
+                          <div class='product-description'>
+                            <span>Headphones</span>
+                            <h1>Beats EP</h1>
+                            <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy
+                              headband and on-ear cushions suitable for live performance</p>
+                          </div>
+                    
+                          <!-- Product Configuration -->
+                          <div class='product-configuration'>
+                    
+                            <!-- Product Color -->
+                            <div class='product-color'>
+                              <span>Color</span>
+                    
+                              <div class='color-choose'>
+                                <div>
+                                  <input data-image='red' type='radio' id='red' name='color' value='red' checked>
+                                  <label for='red'><span></span></label>
+                                </div>
+                                <div>
+                                  <input data-image='blue' type='radio' id='blue' name='color' value='blue'>
+                                  <label for='blue'><span></span></label>
+                                </div>
+                                <div>
+                                  <input data-image='black' type='radio' id='black' name='color' value='black'>
+                                  <label for='black'><span></span></label>
+                                </div>
+                              </div>
+                    
+                            </div>
+                    
+                            <!-- Cable Configuration -->
+                            <div class='cable-config'>
+                              <span>Cable configuration</span>
+                    
+                              <div class='cable-choose'>
+                                <button>Straight</button>
+                                <button>Coiled</button>
+                                <button>Long-coiled</button>
+                              </div>
+                    
+                              <a href='#'>How to configurate your headphones</a>
+                            </div>
+                          </div>
+                    
+                          <!-- Product Pricing -->
+                          <div class='product-price'>
+                            <span>148$</span>
+                            <a href='#' class='cart-btn'>Add to cart</a>
+                          </div>
+                        </div>
+                      </main>
+
+
+
+
+
+
+
+
+
+
+
+                      <div class='modal-body'>
+                        <h5>Popover in a modal</h5>
+                        <p>This <a href='#' role='button' class='btn btn-secondary popover-test' title='Popover title' data-content='Popover body content is set in this attribute.'>button</a> triggers a popover on click.</p>
+                        <hr>
+                        <h5>Tooltips in a modal</h5>
+                        <p><a href='#' class='tooltip-test' title='Tooltip'>This link</a> and <a href='#' class='tooltip-test' title='Tooltip'>that link</a> have tooltips on hover.</p>
+                      </div>

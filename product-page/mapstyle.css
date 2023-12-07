@@ -1,0 +1,41 @@
+#IN-WB {
+  fill: red;
+}
+#IN-OR {
+  fill: #0c134f;
+}
+#IN-BR {
+  fill: #141f81;
+}
+#IN-UP {
+  fill: #0053cf;
+}
+#IN-MP {
+  fill: rgb(112, 59, 219);
+}
+#IN-DL {
+  fill: rgb(255, 204, 0);
+}
+#IN-RJ {
+  fill: rgb(250, 151, 118);
+}
+#IN-GJ {
+  fill: brown;
+}
+#IN-HR {
+  fill: greenyellow;
+}
+
+body {
+  background-color: rgb(75, 108, 238);
+}
+path {
+  fill: rgb(147, 144, 140);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1px;
+  transition: fill 0.3s;
+}
+svg {
+  margin-left: 250px;
+  margin-top: 100px;
+}
